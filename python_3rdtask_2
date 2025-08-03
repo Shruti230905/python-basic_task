@@ -1,0 +1,14 @@
+# math_module_calculations.py
+
+import math
+
+try:
+    num = float(input("Enter a number: "))
+    if num < 0:
+        print("Square root and logarithm are undefined for negative numbers.")
+    else:
+        print(f"Square root of {num} is: {math.sqrt(num)}")
+        print(f"Natural logarithm of {num} is: {math.log(num)}")
+    print(f"Sine of {num} radians is: {math.sin(num)}")
+except ValueError:
+    print("Please enter a valid numeric value.")
